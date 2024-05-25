@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" type="image/jpeg" href="./logo.jpeg">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="./home_animations.css">
+
+<link href="/stylesheets/bootstrap-3.0.css" rel="stylesheet" />
+  <script>
+    var currentIndex = 0;
+    var images = document.querySelectorAll('.image-container');
+
+    function showImage(index) {
+        images.forEach(function(image) {
+            image.classList.remove('active');
+        });
+
+        images[index].classList.add('active');
+    }
+
+    function nextImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        showImage(currentIndex);
+    }
+
+    function startSlideshow() {
+        setInterval(nextImage, 3000);
+    }
+
+    startSlideshow();
+  </script>
+
+</head>
+<body class="gradient">
+
+ 
+
+<header class =  " container "> 
+    <div class = "container" >
+        <div class = "website-name">
+            <h1>DadsUnityHub</h1>
+        </div>
+        <div class="navigation-links">
+            <nav>
+                 <ul>
+                    <!-- <li><a href="home.html">Home</a></li> -->
+                     <!-- <li><a href="http://127.0.0.1:5500/home.html">About Us!</a></li> -->
+                    <!-- <li><a href="login.html">Login</a></li> -->
+                    <!-- <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><a href="books.html">Resources</a></li> -->
+                    <!--
+                    <li><a href="login.html" class="button" style="color: white;"> Login </a></li>
+                    <li><a href="login.html" class="button" style="color: whitesmoke;">Join</a></li>
+                    -->
+
+                    <!--OLD FORM LINKS-->
+                    <li><a href="login2.php" class="button" style="color: whitesmoke;">Login</a></li>
+                    <li><a href="signUp.php" class="button" style="color: whitesmoke;">Sign Up</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+      </div>
+         
+ 
+</header>
+
+<main>
+  <!-- READ CONTENT ALOUD-->
+  <button class="ReadAloud" onclick="readContentAloud()">Read Aloud</button>
+
+  <h2>Our Team</h2>
+
+  <p style="font-size: large;font-weight: bold;">Meet the team behind this project.</p>
+
+    <div class="image-gallery">
+      <div class="image-container" ><img src="./IMAGES 2/KAMO.jpg"   alt="Kamo">
+        <p>Kamogelo  Ratsela <br>Project Manager</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/Mr elvis.jpg"   alt="Elvis">
+        <p>Elvis M. NDLOVU <br>Back-end Developer</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/Stephen.jpg"   alt="Stephen">
+        <p>Stephen Manhenga<br> Front-end Developer</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/ms amo.jpg"   alt="Amo">
+        <p>Amogelang NKOANA <br>Back-end Developer</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/Quintin.jpg"   alt="Quintin">
+        <p>Don Q. ITEKA <br>Data Scientist</p>
+      </div>
+      <div class="image-container" ><img src="IMAGES 2/Anele.jpg"   alt="Anele">
+        <p>Anele MHLANGA <br>Front-end Developer</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/KAMO.jpg"   alt="Kamo">
+        <p>Kamogelo Ratsela <br>Project Manager</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/Mr elvis.jpg"   alt="Elvis">
+        <p>Elvis M. NDLOVU <br>Back-end Developer</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/Stephen.jpg"   alt="Stephen">
+        <p>Stephen Manhenga<br> Front-end Developer</p> 
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/ms amo.jpg"   alt="Amo">
+        <p>Amogelang NKOANA <br>Back-end Developer</p>
+      </div>
+      <div class="image-container" ><img src="./IMAGES 2/Quintin.jpg"   alt="Quintin">
+        <p>Don Q. ITEKA <br>Data Scientist</p>
+      </div>
+      <div class="image-container" ><img src="IMAGES 2/Anele.jpg"   alt="Anele">
+        <p>Anele MHLANGA <br>Front-end Developer</p>
+      </div>
+    </div>  <br><br><br>
+
+
+    
+    <div id="content">
+        <article>
+          
+            <!-- <img src="Dady Image.jpg" alt="Image Description" class="right-image" width="300px" height="20px"/> -->
+            
+            
+             
+            <h3>About Us!</h3>
+             
+            
+
+            <p style="color: rgb(20, 20, 22); font-size: larger;">Hello and Welcome to Dads Unity Hub.....(DUH),
+               a community dedicated to providing support and resources to single fathers who are going through the challenging journey of raising children alone after the loss of a partner.</p> 
+            
+            <div id="moreContent"> 
+          
+              <p style="font-size: larger;">Our platform enables single fathers to connect with each other, share experiences, find guidance, and easy access to a bunch of information they need.</p>
+
+              <p style="font-size: larger;">We also offer a variety of resources to help you navigate the path of single parenting, which include the following:</p>
+              <ul style="font-size: medium;">
+                <li>Expert Advice - information on legal rights, child custody, and support services available to single fathers in South Africa </li>
+                <li>Woman's Gallery - to honor memories of your partners who have since passed</li>
+                <li>Men's Gallery - to celebrate moments you and your children share</li>
+                <li>Blog & Testimonials - to share personal stories from other dads and their children</li>
+                <li>Dating Resources - to assist you with finding companionship or a partner in crime when you are ready</li>
+                <li>Nanny's Profiles - to help you find a reliable child minder, housekeeper or reputable day cares.</li>
+              </ul>
+              <p style="font-size: large;">At <strong>DUH</strong> , We believe that support should be accessible to everyone, anytime, anywhere. So,
+                 don't hesitate ! <strong>Sign Up </strong> and create your account right away. <br>
+                 Be part of a community that gets it!<br>
+                 A community that's here for you every step of the way as you embark on this brave journey of single fatherhood.</p>
+          </div>
+          <button class="show-more-button" onclick="showMore()">Show More</button>
+
+        </article>
+    </div>
+    <div class="con">
+      <a href="mailto:223210182@student.uj.ac.za" target="_blank"><i class="fa-regular fa-circle-envelope"></i></a>
+      <a href="https://wa.me/+27697955468" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</main>
+<!-- Photo which depicts an advert-->
+<!-- <div class=" advert_photo">
+<img src="IMAGES 2/SA Banner.gif"
+  alt="best site in south africa" title="the best site in south africa">
+</div> -->
+
+<footer>
+    <p><nav>
+        <ul>
+          <li><a href="Blog.html">Our Blog!</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="#sitemap">Site Map</a></li>
+          <li><a href="https://www.dsd.gov.za/index.php "> Social Development</a></li>
+          </ul>
+      </nav>
+    </p>
+        
+      
+    <p>&copy; 2024 DadsUnityHub.co.za</p>
+    <p>All Rights Reserved</p>
+  </footer>
+
+<script src="home.js"></script>
+</body>
+</html>

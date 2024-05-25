@@ -1,0 +1,100 @@
+.profile-box {
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    /* Add a border */
+    border-radius: 10px;
+    /* Add rounded corners */
+    padding: 20px;
+    width: fit-content;
+    /* Add padding inside the border */
+}
+.profile-picture {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 20%;
+    /* Make it round */
+    margin-bottom: 5px;
+    /* Add some space below the profile picture */
+    /* padding:20px ; */
+}
+
+.profile-info {
+    text-align: center;
+    box-sizing: border-box;
+    /* Make sure the text is aligned to the left and the box is sized to the content */
+    padding: 20px;
+    text-decoration-color: blueviolet;
+    /* Add some padding around the profile information */
+    /* Add some space between the profile picture and the profile information */
+
+}
+
+.profile-info p {
+    margin: 5px 0;
+    /* Add margin between profile information */
+    
+
+
+
+
+}
+
+.profile-info a {
+    display: block;
+    width: 100%;
+    color: rgb(87, 85, 88);
+    /* Ensure the "Edit Profile" link takes up full width */
+    margin-top: 20px;
+    /* Add some space above the "Edit Profile" link */
+}
+
+
+.media-section {
+    display:block
+    
+   
+
+}
+
+.photo-box {
+    flex: 1;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    width:fit-content;
+    margin-top: 20px;
+
+}
+
+
+.video-box {
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    margin-top: 20px;
+    
+}
+
+.member-container {
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+
+    
+}
+
+.profile-box,
+.photo-box,
+.video-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
